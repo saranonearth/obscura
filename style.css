@@ -1,11 +1,11 @@
 /*Hacked Font*/
-@font-face {
-	font-family:"HACKED";
-	src:url("./resources/HACKED_Title.ttf") 
-	format("truetype"),
-	font-weight:normal;font-style:normal;}
+@font-face {font-family:"HACKED";
+src:url("./resources/HACKED_Title.eot?") format("eot"),
+url("./resources/HACKED_Title.woff") format("woff"),
+url("./resources/HACKED_Title.ttf") format("truetype"),
+url("./resources/HACKED_Title.svg#HACKED") format("svg");
+font-weight:normal;font-style:normal;}
 
- 
 
 * {
 	margin: 0;
