@@ -1,7 +1,7 @@
 /*Hacked Font*/
 @font-face {
 	font-family:"HACKED";
-	src:url("../resources/HACKED_Title.ttf") 
+	src:url("./resources/HACKED_Title.ttf") 
 	format("truetype"),
 	font-weight:normal;font-style:normal;}
 
@@ -19,6 +19,8 @@ body{
 	font-family: 'HACKED', sans-serif;
 	color: #E9185F;
 	letter-spacing: 5px;
+	overflow: hidden;
+
 }
 .container {
 	text-align: center;
@@ -58,6 +60,10 @@ a {
 .social-media {
 	margin-top: 10vw;
 }
+#particles-js {
+	height: 100vh;
+}
+
 /*Media */
 
 @media (max-width: 480px) {
