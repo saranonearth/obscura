@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Obscura 6.0</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- font and icons CDN-->
+	<link href="https://fonts.googleapis.com/css?family=Orbitron:500,900" rel="stylesheet"> 
+	<script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+
+</head>
+<body>
+	<div class="container">
+	<h1> <span class="one"> Obscura</span>  <span class="digit one">6.0</span></h1>
+	<h4 class="one">1<sup>st</sup> march to 3<sup>rd</sup> march.</h4>
+	<p id="counter" class="one"></p>
+
+	<div class="social-media">
+			<a href="https://www.facebook.com/obscuranitkkr"> <i class="fab fa-facebook fa-3x"></i></a>
+			<a href="https://twitter.com/obscura_nit_kkr"> <i class="fab fa-twitter fa-3x"></i></a>
+
+		
+	</div>
+
+	</div>
+<script type="text/javascript">
+
+	/* baffel script */
+
+	const text = baffle(".one");
+
+	text.set({
+
+		characters: '░░█ █░<▓▒█▓',
+		speed: 200
+	});
+
+	text.start();
+	text.reveal(1000);
+
+	
+
+	
+	/* counter script */
+
+var countDownDate = new Date("Mar 1, 2019 18:00:00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("counter").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("counter").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+
+	
+
+
+
+</script>	
+	
+</body>
+</html>

@@ -1,0 +1,90 @@
+/*Hacked Font*/
+@font-face {
+	font-family:"HACKED";
+	src:url("../resources/HACKED_Title.ttf") 
+	format("truetype"),
+	font-weight:normal;font-style:normal;}
+
+ 
+
+* {
+	margin: 0;
+	padding:0;
+}
+
+body{
+	width: 100%;
+	height: 100vh;
+	background-color: #28292b;
+	font-family: 'HACKED', sans-serif;
+	color: #E9185F;
+	letter-spacing: 5px;
+}
+.container {
+	text-align: center;
+	width: 100%;
+	margin:0 auto;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+.digit {
+	font-family: 'Orbitron', sans-serif;
+	margin-left: -10px;
+}
+
+.container h1 {
+	font-size: 10vw;
+
+}
+
+.container h4 {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 1.3vw;
+	margin-top: -1vw;
+	font-weight: 500;
+}
+#counter {
+	font-family: 'Orbitron', sans-serif;
+	margin-top: 10px;
+	font-size: 4vw;
+}
+a {
+	margin:1vw;
+	color: #E9185F;
+	font-size: 0.9em;
+}
+.social-media {
+	margin-top: 10vw;
+}
+/*Media */
+
+@media (max-width: 480px) {
+  
+
+.container {
+	position:absolute;
+	top:40%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+h1 > .digit{
+	margin-left: 10px;
+}
+.container h1 {
+	font-size: 21vw;
+}
+
+.container h4 {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 3vw;
+	margin-top: -1vw;
+}
+a{
+	font-size: 0.5em;
+	margin: 10px;
+}
+}
+
